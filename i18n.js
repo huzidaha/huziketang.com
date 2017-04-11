@@ -92,7 +92,6 @@ fs.writeFileSync(
     .replace(/Win/ig, '收获成就')
     .replace(/about us/ig, '关于我们')
     .replace(/Track/ig, '成效追踪')
-    .replace(/blog/ig, '博客')
     .replace(/screencasts/ig, '视频')
     .replace(/company/ig, '公司')
     .replace(/press/ig, '媒体报道')
