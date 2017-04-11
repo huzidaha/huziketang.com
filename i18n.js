@@ -7,10 +7,6 @@ fs.writeFileSync(
   dest,
   fs.readFileSync(src, 'utf-8')
     .replace(
-      /https:\/\/(www\.)?codeschool.com/ig,
-      'http://huziketang.com'
-    )
-    .replace(
       /Learn more/ig,
       '了解更多'
     )
@@ -57,6 +53,10 @@ fs.writeFileSync(
     .replace(
       /Try building i[\s\S]+?life./ig,
       'RxJS 是一个强大的 Reactive 响应式编程库，提供了强大的数据流组合与控制能力。'
+    )
+    .replace(
+      /href="https:\/\/www.codeschool.com[\s\S]+?"/ig,
+      ''
     )
     .replace(
       /Keep track of all [\s\S]+port Card./ig,
