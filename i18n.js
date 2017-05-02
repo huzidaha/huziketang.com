@@ -7,6 +7,10 @@ fs.writeFileSync(
   dest,
   fs.readFileSync(src, 'utf-8')
     .replace(
+      /2017 Code School LLC. Crafted lovingly in Orlando, Florida./ig,
+      '深圳市云彦腾科技有限责任公司'
+    )
+    .replace(
       /Learn more/ig,
       '了解更多'
     )
